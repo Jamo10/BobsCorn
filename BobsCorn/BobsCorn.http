@@ -1,0 +1,6 @@
+@BobsCorn_HostAddress = http://localhost:5294
+
+GET {{BobsCorn_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
