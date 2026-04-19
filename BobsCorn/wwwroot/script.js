@@ -14,7 +14,8 @@ async function buyCorn() {
         const response = await fetch(url, {
             method: "POST",
             headers: {
-                "Content-Type": "application/json"
+                "Content-Type": "application/json",
+                'Client-Name': 'foo'
             },
             body: JSON.stringify(payload)
         });
