@@ -10,7 +10,13 @@ namespace BobsCorn.Controllers
         [HttpPost]
         public async Task<IActionResult> Get()
         {
-            return Ok("Success");
+            var cordDto = new DTO.CornDto
+            {
+                Code = 200,
+                Message = "Success"
+            };
+
+            return Ok(cordDto);
         }
     }
 }
