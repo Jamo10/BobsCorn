@@ -1,3 +1,4 @@
+using BobsCorn.Repository;
 using Microsoft.AspNetCore.RateLimiting;
 using System.Threading.RateLimiting;
 
@@ -6,6 +7,9 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 builder.Services.AddControllers();
+
+//DI
+builder.Services.AddScoped<IFarm, Farm>();
 
 // Add rate limiter
 builder.Services.AddRateLimiter(options =>
