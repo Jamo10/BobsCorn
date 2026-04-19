@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Corn Market</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <div class="wrap">
+
+        <header class="header">
+            <span class="header-icon">🌽</span>
+            <h1>Bob Market</h1>
+            <p>Fresh corn, one ear at a time</p>
+        </header>
+
+        <div class="card">
+            <div class="price-row">
+                <span>Price per ear</span>
+                <span class="price-badge">$0.75 / ear</span>
+            </div>
+
+            <div class="metrics">
+                <div class="metric">
+                    <div class="metric-label">Corn bought</div>
+                    <div class="metric-value" id="count">0</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-label">Total spent</div>
+                    <div class="metric-value" id="total">$0.00</div>
+                </div>
+            </div>
+
+            <button class="buy-btn" onclick="buyCorn()">
+                <span class="btn-icon">🌽</span>
+                Buy 1 ear of corn
+            </button>
+        </div>
+
+        <div class="card">
+            You can buy at most 1 corn per minute
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

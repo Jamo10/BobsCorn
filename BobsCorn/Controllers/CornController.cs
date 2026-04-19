@@ -7,8 +7,8 @@ namespace BobsCorn.Controllers
     [ApiController]
     public class CornController : ControllerBase
     {
-        [HttpGet]
-        public IActionResult Get()
+        [HttpPost]
+        public async Task<IActionResult> Get()
         {
             return Ok("Success");
         }
