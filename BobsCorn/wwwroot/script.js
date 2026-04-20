@@ -33,7 +33,8 @@ async function buyCorn() {
         }
 
         if (response.status === 409) {
-            var data = response.json();
+            var data = await response.json();
+
             alert(data.message)
         }
 

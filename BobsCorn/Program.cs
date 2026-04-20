@@ -35,6 +35,11 @@ builder.Services.AddRateLimiter(options =>
     };
 });
 
+// Configure logging
+builder.Logging.ClearProviders();
+builder.Logging.AddConsole();
+builder.Logging.AddDebug();
+
 
 var app = builder.Build();
 
